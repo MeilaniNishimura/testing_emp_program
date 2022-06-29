@@ -22,7 +22,7 @@ class MakingTest(unittest.TestCase):
         manager1.add_employee(employee1)
         print(manager1.employees)
         print(len(manager1.employees))
-        manager1.remove_employee(employee1)
+        manager1.remove_employee("emi@codingtemple.com")
         self.assertEquals(len(manager1.employees), 0)
 
         print(len(manager1.employees))

@@ -54,7 +54,7 @@ class Employee:
     
 class Manager(Employee):
     # regarldress of inheritance, this is what we're passing to our new instance
-    def __init__(self, first_name, last_name, role_id=2, employees=[]):
+    def __init__(self, first_name, last_name, role_id=2, employees=None):
         # super() function represents all initialization logic from the parent class' __init__ method
         super().__init__(first_name, last_name, role_id)
         # if there is no list of employees being passed to the instantion of our class
